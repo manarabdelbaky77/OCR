@@ -1,0 +1,20 @@
+# Local Pixtral 12B via Hugging Face Transformers.
+# Do not install or upgrade packages as part of the local-Pixtral source edit.
+#
+# Evidence in this project's checked-in / local transformers tree:
+#   AutoModelForVision2Seq maps "pixtral" -> LlavaForConditionalGeneration
+#   AutoProcessor maps "pixtral" -> PixtralProcessor
+#   PixtralProcessor.__call__(images=..., text=...) accepts PIL images
+#
+# Install later yourself, matching your Python and (if any) GPU:
+#   torch
+#   transformers
+#   accelerate
+#   safetensors
+#
+# Compatibility of the current Python interpreter with a Pixtral 12B checkpoint
+# was not verified in this edit pass.
+torch
+transformers
+accelerate
+safetensors

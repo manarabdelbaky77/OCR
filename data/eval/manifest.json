@@ -1,0 +1,95 @@
+{
+  "description": "Synthetic medical pages for CER/WER experiments. Ground truth is the text used to render each page.",
+  "normalization_note": "Score with ocr.evaluation. Raw files in this folder are the references.",
+  "samples": [
+    {
+      "id": "en_report_clean",
+      "image": "en_report_clean.png",
+      "text_file": "en_report_clean.txt",
+      "conditions": [
+        "english",
+        "report",
+        "dosages",
+        "decimals"
+      ],
+      "degradation": "clean",
+      "note": "Synthetic page. Ground truth is the authored text, not a transcription of a real record."
+    },
+    {
+      "id": "ar_prescription_clean",
+      "image": "ar_prescription_clean.png",
+      "text_file": "ar_prescription_clean.txt",
+      "conditions": [
+        "arabic",
+        "prescription",
+        "dosage",
+        "date"
+      ],
+      "degradation": "clean",
+      "note": "Synthetic page. Ground truth is the authored text, not a transcription of a real record."
+    },
+    {
+      "id": "mixed_note_clean",
+      "image": "mixed_note_clean.png",
+      "text_file": "mixed_note_clean.txt",
+      "conditions": [
+        "mixed",
+        "medication",
+        "decimals",
+        "date"
+      ],
+      "degradation": "clean",
+      "note": "Synthetic page. Ground truth is the authored text, not a transcription of a real record."
+    },
+    {
+      "id": "en_report_lowres_noisy",
+      "image": "en_report_lowres_noisy.png",
+      "text_file": "en_report_lowres_noisy.txt",
+      "conditions": [
+        "english",
+        "low-resolution",
+        "noisy"
+      ],
+      "degradation": "lowres_noisy",
+      "note": "Synthetic page. Ground truth is the authored text, not a transcription of a real record."
+    },
+    {
+      "id": "ar_prescription_blur_rotate",
+      "image": "ar_prescription_blur_rotate.png",
+      "text_file": "ar_prescription_blur_rotate.txt",
+      "conditions": [
+        "arabic",
+        "blurry",
+        "rotated"
+      ],
+      "degradation": "blur_rotate",
+      "note": "Synthetic page. Ground truth is the authored text, not a transcription of a real record."
+    },
+    {
+      "id": "mixed_note_faint",
+      "image": "mixed_note_faint.png",
+      "text_file": "mixed_note_faint.txt",
+      "conditions": [
+        "mixed",
+        "faint",
+        "uneven-lighting"
+      ],
+      "degradation": "faint_uneven",
+      "note": "Synthetic page. Ground truth is the authored text, not a transcription of a real record."
+    },
+    {
+      "id": "en_dosages",
+      "image": "en_dosages.png",
+      "text_file": "en_dosages.txt",
+      "conditions": [
+        "english",
+        "medication",
+        "dosages",
+        "decimals",
+        "date"
+      ],
+      "degradation": "clean",
+      "note": "Synthetic page. Ground truth is the authored text, not a transcription of a real record."
+    }
+  ]
+}
